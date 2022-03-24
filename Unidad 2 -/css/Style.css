@@ -1,0 +1,137 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color_primario: #5daf6f;
+  --color_secundario: #fff;
+  --color_terciario: #ac2444;
+  --color_cuartenario: #000;
+  --tipo_letra:"Fredoka", sans-serif;
+}
+body {
+  font-family:var(--tipo_letra); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+h1 {
+  font-size: 3em;
+  height: 100px;
+  letter-spacing: 7px;
+  text-align: center;
+  padding: 25px;
+  color: var(--color_secundario);
+  background-color: var(--color_primario);
+}
+.barra_navegacion ul {
+  display: flex;
+  height: 40px;
+  background-color: var(--color_terciario);
+  transition: 0s;
+}
+.barra_navegacion li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  height: 100%;
+}
+.barra_navegacion li:hover {
+  transition: 1s;
+  background-color: var(--color_primario);
+}
+.barra_navegacion li a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: var(--color_secundario);
+}
+/* CONTENEDOR_SECUNDARIO */
+.contenedor_secundario {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  height: 80px;
+}
+h2 {
+  font-size: 2em;
+  margin: 20px;
+}
+/*CONTENEDOR_LOGIN */
+.contenedor_login {
+  background-image: url(/img/pechuga_a_las_finas_hierbas.jpg),url(/img/ensalada_sana.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: top left,bottom right;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  height: 300px;
+}
+.contenedor_login label{
+    display: none;
+}
+.contenedor_login input,.contenedor_login button{
+    outline: none;
+    border-radius: 20px;
+    font-size:var(--tipo_letra);
+    border: none;
+    text-align: center;
+    width: 270px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+.contenedor_login div:last-child{
+   
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    flex-direction: row;
+}
+.contenedor_login input:focus{
+width: 290px;
+transition: 1s;
+}
+
+.contenedor_login button{
+    width: 100px;
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  box-shadow: -1px 0px 10px gray;
+}
+.contenedor_footer_principal{
+    display: flex;
+    width: 100%;
+}
+.contenedor_footer_principal >div:first-child{
+   width: 25%;
+   min-width: 15%;
+}
+.contenedor_footer_principal img{
+    display: block;
+    margin: 0 auto;
+}
+.iconos_footer {
+    width: 270px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos_footer a{
+  align-self: center;
+  display: inline-block;
+}
+.iconos_footer i{
+    font-size: 2.5em;
+    color: var(--color_primario);
+   
+}
+#copyright{
+    background-color: rgb(221, 221, 210);
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+h1 {
+    margin: 0;
+}
+ul {
+    margin: 10px 0 0;
+}
+li {
+    position: relative;
+    width: 200px;
+    padding-bottom: 10px;
+}
+li:after {
+    content: 'N° Socio: ' attr(data-socio);
+    position: absolute;
+    top: -22px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 2px;
+    border: 1px solid #eee;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+li:hover:after {
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Socios del Club</h1>
+ <ul>
+    <li data-socio="10784">Juan Carlos, Vitalicio.</li>
+    <li data-socio="97865">Roberto Gomez, Juvenil.</li>
+    <li data-socio="45732">Juana Martinez, Juvenil.</li>
+</ul>
+    </section>
+</body>
+</html>

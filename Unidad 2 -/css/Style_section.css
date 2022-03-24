@@ -1,0 +1,90 @@
+/* Estilos aplicados solo dentro del section*/
+.contenedor_principal{
+    margin: 50px 0;
+ 
+}
+.contenedor_ingredientes{
+ display: flex;
+ margin-bottom: 40px;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+.contenedor_ingredientes div:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.contenedor_ingredientes img{
+    box-shadow: 1px 1px 3px gray;
+    width: 500px;
+    border-radius: 20px;
+
+}
+.contenedor_ingredientes h3{
+    letter-spacing: 2px;
+}
+.contenedor_ingredientes li{
+    margin-bottom: 5px;
+} 
+#linea{
+    height: 50px;
+    border: 0ch;
+    background-color: #ac2444;
+}   
+.contenedor_descripcion, .contenedor_preparacion{
+    height: 450px;
+    width: 90%;
+    font-size: 1.1em;
+    margin: 30px auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedor_preparacion{
+    height: 300px;
+}
+.contenedor_preparacion h3{
+    font-size: 2em;
+    text-align: center;
+}
+.contenedor_preparacion ol{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* PAG DETOX */
+.contenedor_descripcion_detox{
+    width: 40%;
+    font-size: 1.1em;
+}
+
+.tabla_detox{
+    margin: 30px auto;
+    border-collapse:collapse;
+    width: 80%;
+   
+}
+.tabla_detox th,.tabla_detox td{
+    padding: 20px;
+}
+.tabla_detox  td:nth-child(1){
+    border: 6px solid green;
+}
+.tabla_detox td:nth-child(2){
+    border: 6px solid blueviolet;
+}
+.tabla_detox td:nth-child(3){
+    border: 6px solid orange;
+}
+
+.tabla_detox thead{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.tabla_detox tbody li{
+    list-style: none;
+    text-align: center;
+}

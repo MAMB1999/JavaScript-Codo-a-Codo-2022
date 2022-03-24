@@ -1,0 +1,41 @@
+/* Los e stilos de este archivo se encuentran solo dentro del section */ 
+.contenedor_recetas{
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    height: 310px;
+    justify-content: space-evenly;
+}
+h3{
+    color: #fff;
+    letter-spacing: 1px;
+    background-color:#5daf6f ;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+    height: 50px;
+    padding: 8px 0;
+    font-size: 1.5em;
+}
+.contenedor_recetas article{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+.contenedor_recetas article:hover{
+    transition: 1s;
+    width: 28%;
+}
+.contenedor_recetas a{
+    width: 100%;
+}
+.contenedor_recetas img{
+    height: 200px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    object-fit: cover;
+    box-shadow: 0px 1px 5px gray;
+
+}

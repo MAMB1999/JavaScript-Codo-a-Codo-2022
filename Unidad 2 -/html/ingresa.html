@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="/img/ensaladax32.png" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="/css/Style.css" />
-    <link rel="stylesheet" href="/css/Style_index.css">
     <!-- Font-Awesome -->
     <script
       src="https://kit.fontawesome.com/97a646fdfb.js"
@@ -38,32 +37,34 @@
       <!--C contenedor_secundario -->
       <div class="contenedor_secundario">
           <a href=""><img src="/img/ensaladax64.png" alt=""></a>
-          <h2>Las mejores recetas</h2>
+          <h2>Unete a nuestra comunidad</h2>
       </div>
       
     </header>
     <main>
-        <!-- contenedor_recetas -->
-      <section class="contenedor_recetas">
-        <article>
-            <h3>Ensalada de Palta</h3>
-            <a href="/html/ensalada.html" target="_blank">
-              <img src="/img/ensalada_sana.jpg" alt="Imagen Ensalada de Palta">
-            </a>
-        </article>
-          <article>
-              <h3>Pechuguita Balance</h3>
-              <a href="/html/pechuga.html" target="_blank">
-                  <img src="/img/pechuga_a_las_finas_hierbas.jpg" alt="Imagen pechuguita Balance">
-              </a>
-          </article>
+        
+      <section >
+        <!--C contenedor_login -->
+        <form action="" target="_black" method="post" class="contenedor_login">
+          <div>
+            <label for="dni_usuario">DNI</label>
+            <input type="text" name="dni_usuario" id="dni_usuario"
+            placeholder="DNI" pattern="[0-9]{8}" title="Un numero de Dni correco debe estar compuesto de 8 digitos" required/>
+          </div>
+          <div>
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,15}$" placeholder="Nombre de Usuario" title="Un nombre de usuario apropiado debe comenzar con una letra, contener letras, números, guiones bajos y puntos, y tener entre 3 y 15 caracteres de longitud"  required />
+          </div>
+          <div>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" pattern="[a-zA-Z0-9]{6,15}" title="Una contraseña válida debe estar compuesta por letras y/o números y tener una longitud entre 6 y 15 caracteres" required/>
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reiniciar</button>
+          </div>
           
-          <article>
-              <h3>Batidos Detox</h3>
-              <a href="/html/detox.html" target="_blank">
-                <img src="/img/batido_detox.jpg" alt="Imagen Batidos Detox">
-              </a>
-          </article>
+        </form>
       </section>
     </main>
     <footer>
@@ -79,7 +80,8 @@
           <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-      <p> &#64 Come Sano 2022. Todos los derechos reservados.</p>
+      <!-- I copyright -->
+      <p id="copyright"> &#64 Come Sano 2022. Todos los derechos reservados.</p>
     </footer>
 
     <script src="/Script/Script.js"></script>

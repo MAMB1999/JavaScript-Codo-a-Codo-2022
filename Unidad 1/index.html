@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Style.css">
+    <title>Ejercicio reloj</title>
+</head>
+<body>
+    <article>
+        <h1>Reloj</h1>
+        <div class="contenedor_reloj">
+            <!-- Panel donde saldra reloj -->
+            <div id="panel_reloj"></div>
+            <!-- panel donde sonara audio -->
+            <div id="panel_audio">
+                <audio src="/audio/despertador.mp3" id="audio" loop></audio>
+            </div>
+            <button class="inicia_reloj">iniciar Reloj</button>
+            <button class="detiene_reloj">Detener Reloj</button>
+            <button class="inicia_alarma">Iniciar alarma</button>
+            <button class="detiene_alarma">Detener alarma</button>
+        </div>
+    </article>
+    
+    <script src="/Script/Script.js" type="module"></script>
+    <script  src="/Script/reloj.js" nomodule ></script>
+</body>
+</html>
