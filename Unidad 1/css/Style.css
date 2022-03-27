@@ -1,29 +1,72 @@
-body{
-    
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@300;600&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&family=Signika+Negative:wght@400;600&display=swap');
+
+
+:root{
+    --color-primario:rgb(110, 196, 207);
+ 
+}
+body, body::after,body::before{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
 }
 article{
-    background-color: gray;
-    width: 90%;
-    border-radius: 15px;
-    margin: 0 auto;
-    text-align: center;
+    height: 50vh;
+    width: 80%;
+    background-color:gray;
+    border-radius: 50px;
+    margin:25vh auto 0;
 }
 h1{
-    color: white;
-    margin-top: 10px;
-    letter-spacing: 4px;
-    font-size: 2em;
-}
-button{
-    
-    margin: 0 5px 10px 5px;
-    padding: 7px 10px;
-    border: 0ch;
+    font-size: 2.5em;
     letter-spacing: 3px;
-    border-radius: 15px;
 }
 #panel_reloj p{
-    transition: ease-in 2s;
-    font-size: 3em;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.contenedor_reloj{
+    display: flex;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contenedor_botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:space-around;
+    height: 90%;
+    width: 100%;
+
+}
+button{
+    padding:8px 24px;
+    font-weight: 600;
+    color: white;
+    border: none;
+
+    background-color: var(--color-primario);
+    letter-spacing: 3px;
+    border-radius: 15px;
+    font-size: 1.02em;
+   
+}
+button:hover{
+    transition: 0.6s;
+    background-color: rgb(65, 123, 131);
+
+}
+button:active{
+    transition: 0.3s;
+    background-color: rgb(138, 206, 36);
+   
+}
+button::after{
+    transition: 2s;
 }
