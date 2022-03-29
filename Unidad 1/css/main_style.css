@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@300;600&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&family=Signika+Negative:wght@400;600&display=swap');
+
+
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root{
+    --color-primario:rgb(110, 196, 207);
+ 
+}
+.contenedor_navegacion{
+    width: 100%;
+    display: none;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    opacity:0.8;
+    background-color: black;
+    transition: transform 0.3s ease;
+    transform: translate(0,-100%);
+}
+.contenedor_navegacion.is-active{
+    transition: transform 0.3s ease;
+    transform: translate(0,0);
+
+}
+.contenedor_navegacion ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor_navegacion li{
+    display: table-cell;
+    height: 18%;
+    vertical-align: middle;
+    width: 100%;
+}
+.contenedor_navegacion a{
+    display:block;
+    width: inherit;
+    font-size: 2em;
+    padding: 2rem;
+    letter-spacing: 2px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.contenedor_navegacion a:hover{
+    
+    background-color:var(--color-primario);
+    color: black;
+}
+/* hamburguer */
+.boton_hamburguesa{
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    z-index: 999;
+    position: fixed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1.9vh;
+    right: 1.9vh; 
+    background-color:var(--color-primario);
+}
+
