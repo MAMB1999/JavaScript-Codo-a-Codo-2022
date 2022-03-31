@@ -1,60 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
-    <link rel="stylesheet" href="/css/main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"/>
+    <link rel="stylesheet" href="/css/main_style.css" />
     <link rel="stylesheet" href="/css/style_reloj.css" />
-   
-    <title>Ejercicio reloj</title>
+    <link rel="stylesheet" href="/css/style_teclado.css" />
+    <title>Retos de programacion</title>
   </head>
-  <body> 
+  <body>
+    
     <header>
-        <nav class="contenedor_navegacion">
-          <ul>
-            <li><a href="#ancla1">Ejercicio Reloj</a></li>
-            <li><a class="ancla_style" href="">aaaaa</a></li>
-            <li><a href="">aaaaaa</a></li>
-            <li><a href="">aaaaaa</a></li>
-            <li><a href="">aaaaaaa</a></li>
-          </ul>
-        </nav>
+      <div class="titulo_principal">
+        <h1>Ejercicios JS-CSS-HTML</h1>
+      </div>
+     
     </header>
-    <button id="hControl" class="hamburger hamburger--collapse boton_hamburguesa " type="button">
+    <!-- navegacion -->
+    <nav class="contenedor_navegacion">
+      <ul>
+        <li><a href="#ancla1">Ejercicio Reloj</a></li>
+        <li><a class="ancla_style" href="#ancla2">Ejercicio teclado</a></li>
+        <li><a href="">aaaaaa</a></li>
+        <li><a href="">aaaaaa</a></li>
+        <li><a href="">aaaaaaa</a></li>
+      </ul>
+    </nav>
+    <!-- Boton hamburger -->
+    <button
+      id="hControl"
+      class="hamburger hamburger--collapse boton_hamburguesa"
+      type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
-    <section class="primer-contenedor">
+    <!-- contenido general-->
+    <section class="section-contenedor">
+      <!-- Ejercicio reloj -->
       <article id="ancla1">
-        <div class="contenedor_reloj">
+        <div class="contenedores">
           <div>
-              <h1>Reloj</h1>
+            <h2>Reloj</h2>
           </div>
-          <!-- Panel donde saldra reloj -->
-          <div id="panel_reloj"></div>
-          <!-- panel donde sonara audio -->
-          <div id="panel_audio">
-            <audio src="/audio/despertador.mp3" id="audio" loop></audio>
-          </div>
-          <div class="contenedor_botones">
-            <button class="inicia_reloj boton_style">iniciar Reloj</button>
-            <button class="detiene_reloj boton_style">Detener Reloj</button>
-            <button class="inicia_alarma boton_style">Iniciar alarma</button>
-            <button class="detiene_alarma boton_style">Detener alarma</button>
+          <div class="contenedor_reloj">
+            <!-- Panel donde saldra reloj -->
+            <div class="panel_reloj">
+              <p id="reloj"></p>
+            </div>
+            <!-- panel donde sonara audio -->
+            <div class="panel_audio">
+              <audio src="/audio/despertador.mp3" id="audio" loop></audio>
+            </div>
+            <div class="contenedor_botones" id="botones_reloj">
+              <button class="inicia_reloj">iniciar Reloj</button>
+              <button class="detiene_reloj">Detener Reloj</button>
+              <button class="inicia_alarma">Iniciar alarma</button>
+              <button class="detiene_alarma">Detener alarma</button>
+            </div>
           </div>
         </div>
-      </article>  
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
+      </article>
+      <!--Ejercicio teclado -->
+      <article id="ancla2">
+        <div class="contenedores">
+          <div>
+            <h2>Manejo de botones</h2>
+          </div>
+          <div class="contenedor_ejercicio">
+            <div class="contenedor_panel">
+              <span class="controles_panel"></span>
+            </div>
+          </div>
+        </div>
     </section>
     <script src="/Script/Script.js" type="module"></script>
     <script src="/Script/hamburguer.js" nomodule></script>
     <script src="/Script/reloj.js" nomodule></script>
+    
   </body>
 </html>
