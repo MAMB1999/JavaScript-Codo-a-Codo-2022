@@ -8,31 +8,40 @@ export function tecladoControl() {
             elementoHijo = document.getElementById("controles_panel"),
             coordenadasPadre = contenedorPadre.getBoundingClientRect(),
             coordenadasHijo = elementoHijo.getBoundingClientRect();
+        
+            console.log(coordenadasPadre.bottom,coordenadasHijo.bottom);
             switch (e.key) {
             //izquierda
             case "ArrowLeft":
-                e.preventDefault();
-                if(coordenadasHijo.left > coordenadasPadre.left) xPosition--;
+                if (coordenadasHijo.left > coordenadasPadre.left) {
+                    e.preventDefault();
+                    xPosition--;
+                }
                 break;
             //arriba
-            case "ArrowUp":
-                e.preventDefault();
-               
-                if(Math.floor(coordenadasHijo.top ) >= Math.floor(coordenadasPadre.top)) yPosition--;
+            case "ArrowUp": 
+                if (Math.round(coordenadasHijo.top) > Math.round(coordenadasPadre.top)) {
+                    e.preventDefault();
+                    yPosition--;
+                }
                 break;
             //abajo
             case "ArrowDown":
-                e.preventDefault();
-                if(Math.floor(coordenadasHijo.bottom) <= Math.floor(coordenadasPadre.bottom)) yPosition++;
+                if (Math.round(coordenadasHijo.bottom) < Math.round(coordenadasPadre.bottom)) {
+                    e.preventDefault();
+                    yPosition++;
+                }
                 break;
             //derecha
             case "ArrowRight":
-                e.preventDefault();
-                if(coordenadasHijo.right < coordenadasPadre.right) xPosition++;
+                if (coordenadasHijo.right < coordenadasPadre.right) {
+                    e.preventDefault();
+                    xPosition++;
+                }
                 break;
             default:
-            break
-    }
+                break
+        }
         elementoHijo.style.transform = `translate(${xPosition * 3}px,${yPosition * 3}px)`
     })
 }
