@@ -1,0 +1,8 @@
+.contenedor_responsive{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(111, 150, 111);
+    height: 100%;
+}
+ 

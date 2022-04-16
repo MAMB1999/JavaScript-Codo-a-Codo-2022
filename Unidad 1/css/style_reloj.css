@@ -5,7 +5,7 @@
     --color-secundario:rgb(0, 0, 0);
     --color-terciario:rgb(104, 104, 104);
     --color-cuartenario:rgb(75, 160, 100);
-    --color-quintario:rgb(121, 221, 235);
+    --color-quintario:rgb(38, 116, 126);
 }
 .contenedor_reloj{
     display: flex;
@@ -43,4 +43,7 @@ transition:color 1s ease;
     border: none;
     background-color: var(--color-primario);
     transition: background 1s;
+}
+.contenedor_botones > button:hover{
+    background-color: var(--color-quintario);
 }

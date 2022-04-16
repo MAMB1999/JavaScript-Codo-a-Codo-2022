@@ -8,8 +8,6 @@ export function tecladoControl() {
             elementoHijo = document.getElementById("controles_panel"),
             coordenadasPadre = contenedorPadre.getBoundingClientRect(),
             coordenadasHijo = elementoHijo.getBoundingClientRect();
-        
-            console.log(coordenadasPadre.bottom,coordenadasHijo.bottom);
             switch (e.key) {
             //izquierda
             case "ArrowLeft":

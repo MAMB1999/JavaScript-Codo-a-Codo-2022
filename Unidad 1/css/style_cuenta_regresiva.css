@@ -1,0 +1,35 @@
+.contenedor_cuenta_regresiva{
+    background-color: wheat;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedor_cuenta_regresiva p{
+    text-align: center;
+    font-size: 1.1em;
+}
+.controles_calendario{
+
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boton_calendario{
+    border: 0px;
+    font-size: 1.2em;
+    padding: 7px 19px;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    background-color: rgb(173, 143, 104);
+}
+.controles_calendario input{
+    text-align: center;
+    border: 0;
+    padding: 7px 19px;
+    background-color: rgb(173, 143, 104);
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    border-radius: 25px;
+}
