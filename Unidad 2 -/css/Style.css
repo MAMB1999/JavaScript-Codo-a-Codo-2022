@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 *::before,
 *::after,
 * {
@@ -33,22 +35,20 @@ h1 {
   background-color: var(--color_terciario);
   transition: 0s;
 }
-.barra_navegacion li {
+.barra_navegacion a{
   display: inline-block;
   text-align: center;
   padding: 10px;
-  width: 20%;
+  width: 100%;
   height: 100%;
-}
-.barra_navegacion li:hover {
-  transition: 1s;
-  background-color: var(--color_primario);
-}
-.barra_navegacion li a {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: 600;
   color: var(--color_secundario);
+}
+.barra_navegacion a:hover {
+  transition: 1s;
+  background-color: var(--color_primario);
 }
 /* CONTENEDOR_SECUNDARIO */
 .contenedor_secundario {
@@ -92,10 +92,7 @@ h2 {
     width: 250px;
     flex-direction: row;
 }
-.contenedor_login input:focus{
-width: 290px;
-transition: 1s;
-}
+
 
 .contenedor_login button{
     width: 100px;

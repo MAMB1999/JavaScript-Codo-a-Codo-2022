@@ -2,7 +2,48 @@
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(111, 150, 111);
+    background-color: rgb(65, 130, 160);
     height: 100%;
 }
- 
+.contenedor_dispositivos p{
+    font-size: 2em;
+}
+#responsive_form{
+    width: 45%;
+}
+ #responsive_form > input{
+     border-radius: 50px;
+     width: 65%;
+     display: block;
+     color: white;
+     text-align: center;
+     border: none;
+     background-color: var(--color-terciario);
+     font-size: 1.2em;
+     padding: 8px 7px;
+     margin:0 auto 6px;
+ }
+ #responsive_form input::placeholder{
+     color: white;
+ }
+ #botones_responsive{
+    margin-top: 15px;
+    display: flex ;
+     justify-content: space-around;
+
+ }
+ #botones_responsive input{
+    padding: 5px 8px;
+    color: white;
+    width: 30%;
+    min-width: 10%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: none;
+    background-color: var(--color-primario);
+    transition: background 1s;
+ }
+ #botones_responsive input:hover{
+    background-color: var(--color-quintario);
+    cursor:pointer;
+}
